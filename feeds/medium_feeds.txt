@@ -1,0 +1,4 @@
+# Add one Medium RSS URL per line.
+# Example:
+# https://medium.com/feed/@username
+https://medium.com/feed/furuhashilab

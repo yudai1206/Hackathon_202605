@@ -1,0 +1,54 @@
+---
+id: "c1ea5983a26a7c9b1820558abce923a2132992d9d2b45e4f07005777abf02c8b"
+title: "State of the Mapに参加！"
+url: "https://medium.com/furuhashilab/state-of-the-map%E3%81%AB%E5%8F%82%E5%8A%A0-8ce3c3e85899"
+author: "INADA YUKA"
+published_at: "2025-10-14T00:00:00.000Z"
+label: "foss4g_sotm"
+tags: []
+source_file: "raw/rss/articles.json"
+content_source: "medium_sheet_summary"
+---
+
+# State of the Mapに参加！
+
+## 1. 元記事情報
+
+- タイトル: State of the Mapに参加！
+- 著者: INADA YUKA
+- 公開日: 2025-10-14
+- URL: https://medium.com/furuhashilab/state-of-the-map%E3%81%AB%E5%8F%82%E5%8A%A0-8ce3c3e85899
+- 分類ラベル: `foss4g_sotm`
+- タグ: なし
+
+## 2. 概要
+
+State of the Mapに参加！に関する短い活動記録。こんにちは！ 3年の稲田優花です。
+
+## 3. 重要ポイント
+
+- 2025-10-14に公開された「State of the Mapに参加！」の記録。
+- 主題は「State of the Mapに参加！に関する短い活動記録。こんにちは！ 3年の稲田優花です。」。
+- 分類ラベルは foss4g_sotm。NotebookLMでは同じ分類の記事と比較しやすい。
+
+## 4. 関連キーワード
+
+- foss4g_sotm
+- State
+- of
+- the
+- Mapに参加
+- INADA YUKA
+- 2025-10-14
+
+## 5. 関連する古橋研究室の活動
+
+FOSS4G、State of the Map、OSGeoなどのオープンソースGISコミュニティ活動。
+
+## 6. NotebookLM向けメモ
+
+検索時は「State of the Mapに参加！」「INADA YUKA」「2025-10-14」「foss4g_sotm」を主要な手がかりにする。
+
+関連調査では、foss4g_sotm、State、of、the、Mapに参加、INADA YUKAをキーワードとして、同じ分類の記事や近い日付の週報と照合するとよい。
+
+本文HTMLがない記事は、シート由来の概要・タグ・メタデータをもとにした要約として扱う。

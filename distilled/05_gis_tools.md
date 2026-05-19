@@ -1,0 +1,312 @@
+# GISツール・ドローン・技術実践
+
+## 1. このドキュメントの目的
+
+QGIS、GIS、ドローン、ODM、3Dモデル、地理空間ツールに関する技術実践を整理する。
+
+対象記事数: 110件。対象分類ラベル: `qgis_gis_tools`。
+
+## 2. 関連する記事一覧
+
+- 2026-05-18: 5/19ドローン部２週報：ODMを動かすためにMacと格闘した / 著者: Tomoya Aiko / URL: https://medium.com/furuhashilab/5-19%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%E9%83%A8%EF%BC%92%E9%80%B1%E5%A0%B1-odm%E3%82%92%E5%8B%95%E3%81%8B%E3%81%99%E3%81%9F%E3%82%81%E3%81%ABmac%E3%81%A8%E6%A0%BC%E9%97%98%E3%81%97%E3%81%9F-ce8586339390?source=rss----bd92ed991eb9---4
+- 2026-01-12: 3Dプリンター使ってついに完成！！ / 著者: YAMASAKI RITO / URL: https://medium.com/furuhashilab/3d%E3%83%97%E3%83%AA%E3%83%B3%E3%82%BF%E3%83%BC%E4%BD%BF%E3%81%A3%E3%81%A6%E3%81%A4%E3%81%84%E3%81%AB%E5%AE%8C%E6%88%90-989139bffd16
+- 2026-01-06: 冬休みもコツコツ進めたドローン制作 / 著者: Yukari Hayashi / URL: https://medium.com/furuhashilab/冬休みもコツコツ進めたドローン制作-4147d77f2cf3
+- 2026-01-05: 古橋先生のドローン空撮、動画化してみた。【V&F週報】 / 著者: Kentaro Takai / URL: https://medium.com/furuhashilab/古橋先生のドローン空撮-動画化してみた-v-f週報-9b359458aed9
+- 2025-12-15: Nano Bananaにグラレコ描かせてみた！ドローン2週報 / 著者: Fuka Okamura / URL: https://medium.com/furuhashilab/nano-bananaにグラレコ描かせてみた-ドローン2週報-ba24db54b922
+- 2025-12-15: 【12月ハッカソン】今話題のGoogle GeminiのNano Banana実際の精度はどうなの！？ / 著者: Yukari Hayashi / URL: https://medium.com/furuhashilab/12%E6%9C%88%E3%83%8F%E3%83%83%E3%82%AB%E3%82%BD%E3%83%B3-%E4%BB%8A%E8%A9%B1%E9%A1%8C%E3%81%AEgoogle-gemini%E3%81%AEnano-banana%E5%AE%9F%E9%9A%9B%E3%81%AE%E7%B2%BE%E5%BA%A6%E3%81%AF%E3%81%A9%E3%81%86%E3%81%AA%E3%81%AE-ec7429cedeb6
+- 2025-12-09: 【ドローン部2】 巾着袋案 / 著者: AkiraMotoyoshi / URL: https://medium.com/furuhashilab/ドローン部2-巾着袋案-a433c314b081
+- 2025-12-08: モデリングって難しい / 著者: YAMASAKI RITO / URL: https://medium.com/furuhashilab/モデリングって難しい-10949d5a318b
+- 2025-12-01: 【ドローン1 週報 12/02】ちゃくちゃくと自家製ドローンを作成中！ / 著者: INOUE RENSEI / URL: https://medium.com/furuhashilab/ドローン1-週報-12-02-ちゃくちゃくと自家製ドローンを作成中-ee8f1720c444
+- 2025-11-25: 【ドローン部2】ハッカソン案 / 著者: AkiraMotoyoshi / URL: https://medium.com/furuhashilab/ドローン部2-ハッカソン案-0a44369fc146
+- 2025-11-25: 【ドローン1】11月ハッカソン / 著者: INOUE RENSEI / URL: https://medium.com/furuhashilab/ドローン1-11月ハッカソン-5dc07a00b798
+- 2025-11-10: ドローン部 活動日記 / 著者: Hinako Terado / URL: https://medium.com/furuhashilab/ドローン部-活動日記-699d674e1e09
+- 2025-11-10: 作成するドローンを決定しました！ / 著者: INADA YUKA / URL: https://medium.com/furuhashilab/作成するドローンを決定しました-c7a965782ca2
+- 2025-11-03: NISTが提唱！ドローン操縦者技能評価メニューへの挑戦【ドローン②週報】 / 著者: Fuka Okamura / URL: https://medium.com/furuhashilab/nistが提唱-ドローン操縦者技能評価メニューへの挑戦-ドローン②週報-1dc4f0f590a8
+- 2025-10-28: ついに始動 / 著者: YAMASAKI RITO / URL: https://medium.com/furuhashilab/ついに始動-4185bd7bb2ea
+- 2025-10-20: ドローンレースがしたい！【10/21 ドローン2 週報】 / 著者: AkiraMotoyoshi / URL: https://medium.com/furuhashilab/ドローンレースがしたい-10-21-ドローン2-週報-66fb323104b1
+- 2025-10-18: ドローン部1の3Dプリンター初挑戦記録 / 著者: Yukari Hayashi / URL: https://medium.com/furuhashilab/ドローン部1の3dプリンター初挑戦記録-f3807afdbaa0
+- 2025-10-13: 【10/14ドローン部2週報】ドローンで何してみる？ / 著者: KOZAKI MIA / URL: https://medium.com/furuhashilab/10-14ドローン部2週報-ドローンで何してみる-515e17fee47b
+- 2025-10-13: やっと決めました！ドローン部1の後期の目標はこれだ！ / 著者: Yukari Hayashi / URL: https://medium.com/furuhashilab/やっと決めました-ドローン部1の後期の目標はこれだ-5ecea457a24c
+- 2025-10-06: 草刈りドローンの可能性について / 著者: Hinako Terado / URL: https://medium.com/furuhashilab/草刈りドローンの可能性について-69bf8fd25b80
+- 2025-07-22: アプリでホバリング練習【ドローン週報②7/22】 / 著者: Fuka Okamura / URL: https://medium.com/furuhashilab/アプリでホバリング練習-ドローン週報②7-22-f6f8e9f3257f
+- 2025-07-07: 学びの多かった一週間 / 著者: Hinako Terado / URL: https://medium.com/furuhashilab/学びの多かった一週間-8166697f25aa
+- 2025-07-01: 🌏 大阪万博×ドローン / 著者: SATOAKI / URL: https://medium.com/furuhashilab/大阪万博-ドローン-11beaf232b9e
+- 2025-06-29: いよいよ明日！ジオ展カウントダウン最終報告！【2025/7/1 ドローン1 週報】 / 著者: Yukari Hayashi / URL: https://medium.com/furuhashilab/いよいよ明日-ジオ展カウントダウン最終報告-2025-7-1-ドローン1-週報-5c734cea3c7f
+- 2025-06-24: 操作練習に最適！5,000円以下のトイドローン比較レポート【6/24ドローン1週報】 / 著者: Moe Anjo / URL: https://medium.com/furuhashilab/%E3%81%82-3d0fc411b4c3
+- 2025-06-22: 【ドローン２週報】ドローンを飛ばすまでに / 著者: AkiraMotoyoshi / URL: https://medium.com/furuhashilab/%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%EF%BC%92%E9%80%B1%E5%A0%B1-%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%E3%82%92%E9%A3%9B%E3%81%B0%E3%81%99%E3%81%BE%E3%81%A7%E3%81%AB-c7ffb76bee41
+- 2025-06-17: 【6/17ドローン部１週報】横瀬町防災訓練に参加！ / 著者: INOUE RENSEI / URL: https://medium.com/furuhashilab/6-17ドローン部１週報-横瀬町防災訓練に参加-040cd0eeda39
+- 2025-06-09: Japan Drone 2025に行ってきました！ / 著者: Hinako Terado / URL: https://medium.com/furuhashilab/japan-drone-2025に行ってきました-778d063ae04b
+- 2025-06-07: Japan Drone 2025に行ってみた！ / 著者: YAMASAKI RITO / URL: https://medium.com/furuhashilab/japan-drone-2025に行ってみた-fd15bdfe26f3
+- 2025-06-03: ジオ展に向けて ジオガチャデザインソン【6/3ドローン1週報】 / 著者: Moe Anjo / URL: https://medium.com/furuhashilab/ジオ展に向けて-ジオガチャデザインソン-6-3ドローン1週報-eff4331c88cd
+- 2025-05-27: 【ドローン部2 】 ジオ展に向けたガチャガチャ景品案 / 著者: AkiraMotoyoshi / URL: https://medium.com/furuhashilab/ドローン部2-ジオ点に向けたガチャガチャ景品案-ceb70ca742ea
+- 2025-05-27: ジオ展用景品について！【5/27ドローン1週報】 / 著者: INADA YUKA / URL: https://medium.com/furuhashilab/ジオ展用景品について-5-27ドローン1週報-3827c693f2d6
+- 2025-05-19: 【5/20ドローン部２週報】ドローンの種類を学ぼう / 著者: KOZAKI MIA / URL: https://medium.com/furuhashilab/5-20%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%E9%83%A8%EF%BC%92%E9%80%B1%E5%A0%B1-%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%E3%81%AE%E7%A8%AE%E9%A1%9E%E3%82%92%E5%AD%A6%E3%81%BC%E3%81%86-cc0e3788223a
+- 2025-05-18: 【5/18 週報】ドローン部、秋の合宿企画が始動中！ / 著者: Yukari Hayashi / URL: https://medium.com/furuhashilab/5-18-週報-ドローン部-秋の合宿企画が始動中-007931dd20c4
+- 2025-04-22: Phantom 4って何？｜基本構造と機能をわかりやすく解説 / 著者: INOUE RENSEI / URL: https://medium.com/furuhashilab/phantom-4って何-基本構造と機能をわかりやすく解説-2dbce0ee090f
+- 2025-04-15: 【Drone1 週報】ドローン部の魅力的な新メンバー紹介！！ / 著者: Yukari Hayashi / URL: https://medium.com/furuhashilab/drone1-週報-ドローン部の魅力的な新メンバー紹介-72c7a4ddaf04
+- 2024-12-13: 無人航空機の事故、重大インシデントが発生した時の義務 / 著者: Yukari Hayashi / URL: https://medium.com/furuhashilab/無人航空機の事故-重大インシデントが発生した時の義務-e93a2b9c2064
+- 2024-10-21: 日本初！花火搭載のドローン！ / 著者: Yukari Hayashi / URL: https://medium.com/furuhashilab/日本初-花火搭載のドローン-ea2180d82a3a
+- 2024-07-08: OpenDroneMapとは？【ドローン部週報 2024/07/08】 / 著者: Yukari Hayashi / URL: https://medium.com/furuhashilab/opendronemapとは-ドローン部週報-2024-07-08-077d93c74679
+- 2024-06-24: 横瀬町でドローンの防災飛行訓練に参加！ (ドローン部週報 6/25) / 著者: Yukari Hayashi / URL: https://medium.com/furuhashilab/横瀬町でドローンの防災飛行訓練に参加-ドローン部週報-6-25-dcf610d11b33
+- 2023-05-30: 吉田 ドローンモデリングハッカソン / 著者: 吉田航 / URL: https://medium.com/furuhashilab/吉田-ドローンモデリングハッカソン-74dc6033c9a7
+- 2022-06-21: 6/18,19横瀬町災害時初動訓練（ドローン訓練会） / 著者: Taiyu Ozawa / URL: https://medium.com/furuhashilab/6-18-19横瀬町災害時初動訓練-ドローン訓練会-764c8b9f2b8e
+- 2022-06-09: ドローン部週報 6/14 / 著者: 吉田航 / URL: https://medium.com/furuhashilab/ドローン部週報-6-14-edca541acd6a
+- 2022-05-31: 【ドローン部】ガチャガチャハッカソン / 著者: Taiyu Ozawa / URL: https://medium.com/furuhashilab/ドローン部-ガチャガチャハッカソン-c667c31915d9
+- 2022-05-10: 【ドローン部】週報２ / 著者: 吉田航 / URL: https://medium.com/furuhashilab/ドローン部-週報２-7c29d4cabfc9
+- 2022-04-26: 【ドローン部】2022年度 第一回目ミーティング / 著者: Taiyu Ozawa / URL: https://medium.com/furuhashilab/ドローン部-第一回目ミーティング-3fcbb1061f65
+- 2022-01-11: ドローン部、今年の抱負 / 著者: Yosuke Kanda / URL: https://medium.com/furuhashilab/ドローン部-今年の抱負-8e575309c528
+- 2021-12-04: ドローン週報 / 著者: Ran Matsuyama / URL: https://medium.com/furuhashilab/ドローン週報-7d7847e58da1
+- 2021-11-02: ドローン部：ハッカソンの修正 / 著者: Naoki Ito / URL: https://medium.com/furuhashilab/ドローン部-味のあるイラスト作成-2f05a3de9fda
+- 2021-10-19: 第一回STM訓練開催！ / 著者: Yosuke Kanda / URL: https://medium.com/furuhashilab/第一回stm訓練開催-1df373ee2837
+- 2021-10-11: ドローン部週報 / 著者: Naoki Ito / URL: https://medium.com/furuhashilab/ドローン部週報-510c6b8cd9a
+- 2021-09-28: ドローン部夏合宿 / 著者: Ho / URL: https://medium.com/furuhashilab/ドローン部夏合宿-71e626496402
+- 2021-06-15: STMをつくろう! / 著者: Yosuke Kanda / URL: https://medium.com/furuhashilab/stmをつくろう-6c3abc582875
+- 2021-06-07: ドローン部６月ハッカソン / 著者: Ran Matsuyama / URL: https://medium.com/furuhashilab/ドローン部６月ハッカソン-298a5766b837
+- 2021-06-01: ドローン週報⑤ / 著者: Ho / URL: https://medium.com/furuhashilab/ドローン週報⑤-d581e3c8ae6
+- 2021-05-25: ドローン部：ハッカソンを終えて / 著者: Naoki Ito / URL: https://medium.com/furuhashilab/ドローン部-ハッカソンを終えて-d874405f4d7e
+- 2021-05-11: ドローン部週報③ / 著者: Yosuke Kanda / URL: https://medium.com/furuhashilab/ドローン部週報③-843bd57482de
+- 2021-04-26: ドローン部週報② / 著者: Ran Matsuyama / URL: https://medium.com/furuhashilab/ドローン部週報②-33f0b968cb8a
+- 2021-01-14: 航空場を地理院地図で表示させる！？ / 著者: Hironori Morita / URL: https://medium.com/furuhashilab/航空場を地理院地図で表示させる-92a457e53e38
+- 2020-12-25: アドベントカレンダー 12/25 / 著者: 森玲子 / URL: https://medium.com/furuhashilab/アドベントカレンダー-12-25-9fcdb652690b
+- 2020-12-24: 12月24日アドベントカレンダー「ドローンイベント広報上の最重要視点の選定」 / 著者: 佐野公紀 / URL: https://medium.com/furuhashilab/12月24日アドベントカレンダー-ドローンイベント広報上の最重要視点の選定-8044d439c747
+- 2020-12-22: 【コンバーターファイターⅡ】MacOSでPotreeConverterの使用はできるのか？ / 著者: Hironori Morita / URL: https://medium.com/furuhashilab/コンバーターファイターⅱ-macosでpotreeconverterの使用はできるのか-16e2891a83ed
+- 2020-12-20: ドローン部週報㉒ / 著者: 森玲子 / URL: https://medium.com/furuhashilab/ドローン部週報㉒-97f3794d1eaf
+- 2020-12-16: 伊豆大島ドローン調査を決行 / 著者: Shunta Nakanishi / URL: https://medium.com/furuhashilab/伊豆大島ドローン調査を決行-ff28c4c16937
+- 2020-12-14: アドベントカレンダー12月14日 / 著者: Ho / URL: https://medium.com/furuhashilab/アドベントカレンダー12月14日-1e2ed0b0fec8
+- 2020-12-07: ドローン部 週報⑳ / 著者: Shunta Nakanishi / URL: https://medium.com/furuhashilab/ドローン部-週報⑳-f7d3dcd57ac3
+- 2020-12-02: 少年 君の空撮データは何色だ！ / 著者: Taichi Furuhashi / URL: https://medium.com/furuhashilab/少年-君の空撮データは何色だ-5a29fb759ca9
+- 2020-11-29: ドローン部週報 19 / 著者: Naoki Ito / URL: https://medium.com/furuhashilab/ドローン部週報-19-b683dd26367c
+- 2020-11-16: ドローン週報⑱ / 著者: Ran Matsuyama / URL: https://medium.com/furuhashilab/ドローン週報⑱-d09bbfb4ffe8
+- 2020-11-09: ポイントクラウドデータを用いた三人称視点ドローンの検討 / 著者: Hironori Morita / URL: https://medium.com/furuhashilab/ポイントクラウドデータを用いた三人称視点ドローンの検討-1b9a0ceff67a
+- 2020-11-09: Pix4Dを用いたオルソモザイクの形成のマニュアル作成 / 著者: Naoki Ito / URL: https://medium.com/furuhashilab/pix4dを用いたオルソモザイクの形成のマニュアル作成-e0fb55a7a334
+- 2020-11-07: ゼミ論中間発表～伊豆大島放置林調査～ / 著者: Shunta Nakanishi / URL: https://medium.com/furuhashilab/ゼミ論中間発表-伊豆大島放置林調査-749fabee5263
+- 2020-10-21: DRONEBIRDは災害時に何を行うのか！？ / 著者: Hironori Morita / URL: https://medium.com/furuhashilab/dronebirdは災害時に何を行うのか-f0e4a153bcb3
+- 2020-10-19: ドローン部週報16 / 著者: 佐野公紀 / URL: https://medium.com/furuhashilab/ドローン部週報16-3ad0727c0980
+- 2020-10-05: ガチャムクがOAM解説員だった話 / 著者: 佐野公紀 / URL: https://medium.com/furuhashilab/ドローン部-ガチャムクハッカソン-87d7c602c854
+- 2020-09-28: ドローン部週報15 / 著者: Ho / URL: https://medium.com/furuhashilab/ドローン部週報15-720d94766057
+- 2020-09-21: 再始動！ / 著者: Hironori Morita / URL: https://medium.com/furuhashilab/再始動-e9d7bdb83081
+- 2020-08-23: ドローン部〜夏合宿〜 / 著者: 佐野公紀 / URL: https://medium.com/furuhashilab/ドローン部-夏合宿-ded7992ca531
+- 2020-07-28: OpenAerialMapの活用(草津市編） / 著者: Hironori Morita / URL: https://medium.com/furuhashilab/openaerialmapの活用-草津市編-a42476a6f891
+- 2020-07-26: ドローン週報⑬ / 著者: Ran Matsuyama / URL: https://medium.com/furuhashilab/ドローン週報⑬-cec744111913
+- 2020-07-19: ドローン部週報⑫ / 著者: 古屋 百々葉 / URL: https://medium.com/furuhashilab/ドローン部週報⑪-f6c5ad8e18d
+- 2020-07-11: ドローン部週報 第１１週目 / 著者: Shunta Nakanishi / URL: https://medium.com/furuhashilab/ドローン部週報-第１１週目-72a23c8a14
+- 2020-06-30: ドローンにまつわる法律 / 著者: Hironori Morita / URL: https://medium.com/furuhashilab/ドローンにまつわる法律-bdd855e0a9c7
+- 2020-06-30: ドローン部週報 第10週目 / 著者: Nao Yoshida / URL: https://medium.com/furuhashilab/ドローン部週報-第10週目-27214bce3116
+- 2020-06-30: ドローン部 図鑑組 ハッカソン / 著者: 佐野公紀 / URL: https://medium.com/furuhashilab/ドローン部-図鑑組-ハッカソン-de0e9f340683
+- 2020-06-23: ドローン部週報⑨ / 著者: 佐野公紀 / URL: https://medium.com/furuhashilab/ドローン部週報⑨-a3cd8972224f
+- 2020-06-15: 荒野行動から学ぶドローンの安全飛行 / 著者: Hironori Morita / URL: https://medium.com/furuhashilab/荒野行動から学ぶドローンの安全飛行-d649e3d00bfa
+- 2020-05-24: ドローン部週報⑥ / 著者: 森玲子 / URL: https://medium.com/furuhashilab/ドローン部週報-71fd93bcfcc1
+- 2020-05-16: ドローン部週報⑤ / 著者: Naoki Ito / URL: https://medium.com/furuhashilab/ドローン部週報⑤-ecd14610c32d
+- 2020-05-12: 里山ガーデンPV、DRONEBIRD賞への道 / 著者: Hironori Morita / URL: https://medium.com/furuhashilab/里山ガーデンpv-dronebird賞への道-1e6f2e1e2440
+- 2020-05-12: ふるはし研究室の災害教室 / 著者: 安保龍一 / URL: https://medium.com/furuhashilab/ふるはし研究室の災害教室-5f6bbb204ab0
+- 2020-05-06: ドローン部週報④ / 著者: Ran Matsuyama / URL: https://medium.com/furuhashilab/ドローン部週報④-b5af4f63e27b
+- 2020-04-29: ドローン部週報➂ / 著者: 古屋 百々葉 / URL: https://medium.com/furuhashilab/ドローン部週報➂-19f2f4298245
+- 2020-04-25: ようこそドローン部へ！～オンラインで知識を深めよう。～ / 著者: Shunta Nakanishi / URL: https://medium.com/furuhashilab/ようこそドローン部へ-オンラインで知識を深めよう-77a05d1fce3b
+- 2019-12-16: ドローン部週報 ７週目 / 著者: Hironori Morita / URL: https://medium.com/furuhashilab/ドローン部週報-７週目-917d1b32d7be
+- 2019-12-02: オープンなコミュニティだからこそ行動規範 Code of Conduct を大事にする。 / 著者: Taichi Furuhashi / URL: https://medium.com/furuhashilab/オープンなコミュニティだからこそ行動規範-code-of-conduct-を大事にする-9eb6ddef7b58
+- 2019-11-22: ドローン部 週報 第４週目 / 著者: Shunta Nakanishi / URL: https://medium.com/furuhashilab/ドローン部-週報-第４週目-1e78a2b2e04f
+- 2019-10-14: ドローン部週報：ドローン部始動開始！ / 著者: 古屋 百々葉 / URL: https://medium.com/furuhashilab/こんにちは-3年のこやももはです-45b6a074086b
+- 2018-12-27: 地物追加機能実装 / 著者: Ayame.O / URL: https://medium.com/furuhashilab/地物追加機能実装-c69f24f2b7cf
+- 2018-12-14: 現在位置表現実装 / 著者: Ayame.O / URL: https://medium.com/furuhashilab/現在位置表現実装-a9084e9e4756
+- 2018-12-11: モード1とモード2の仁義なき戦い / 著者: Taichi Furuhashi / URL: https://medium.com/furuhashilab/モード1とモード2の仁義なき戦い-92aa99ead2de
+- 2018-12-08: 人口集中地区(DID)を知る方法 / 著者: Taichi Furuhashi / URL: https://medium.com/furuhashilab/人口集中地区-did-を知る方法-addf252045d2
+- 2018-11-18: ドローンの初心者講座 / 著者: Ayame.O / URL: https://medium.com/furuhashilab/ドローンの初心者講習-8b4854b83749
+- 2018-10-17: 初めてのドローンワークショップ inイオンモール武蔵村山 / 著者: 北野恭一朗 / URL: https://medium.com/furuhashilab/初めてのドローンワークショップ-inイオンモール武蔵村山-fec618c959f0
+- 2018-10-16: イオンモール巡業ドローンワークショップ〜ドローンが動かなくなる恐怖〜 / 著者: Kaori Suemitsu / URL: https://medium.com/furuhashilab/イオンモール巡業ドローンワークショップ-ドローンが動かなくなる恐怖-d9f4844c445d
+- 2018-10-12: No more ドローン事故 / 著者: Shoma Masuda / URL: https://medium.com/furuhashilab/no-more-ドローン事故-72b71acedb90
+- 2018-10-03: イオンモール巡業ドローンワークショップマニュアル～設営編～ / 著者: 中西敦子 / URL: https://medium.com/furuhashilab/イオンモール巡業ドローンワークショップマニュアル-設営編-fdb01d4bbbd6
+- 2018-07-16: ゼミ合宿＠伊豆大島 / 著者: Ayame.O / URL: https://medium.com/furuhashilab/ゼミ合宿-伊豆大島-88ed09b33fa7
+- 2018-06-24: 武甲山って知ってる？ / 著者: Ayame.O / URL: https://medium.com/furuhashilab/武甲山って知ってる-96f16e6d815d
+- 2018-05-29: OpenAerialMapのススメ / 著者: Taichi Furuhashi / URL: https://medium.com/furuhashilab/openaerialmapのススメ-528bee8d910
+
+## 3. 時系列整理
+
+- 2026-05-18: 5/19ドローン部２週報：ODMを動かすためにMacと格闘した。要約: 前回の週報では、ドローンで撮影した画像をODM（OpenDroneMap）で処理すると、オルソ画像や点群データ、3Dモデル、DSM/DTMなどを作成できることを学びました。 URL: https://medium.com/furuhashilab/5-19%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%E9%83%A8%EF%BC%92%E9%80%B1%E5%A0%B1-odm%E3%82%92%E5%8B%95%E3%81%8B%E3%81%99%E3%81%9F%E3%82%81%E3%81%ABmac%E3%81%A8%E6%A0%BC%E9%97%98%E3%81%97%E3%81%9F-ce8586339390?source=rss----bd92ed991eb9---4
+- 2026-01-12: 3Dプリンター使ってついに完成！！。要約: 3Dプリンター使ってついに完成！！に関する短い活動記録。こんにちは！ ！ URL: https://medium.com/furuhashilab/3d%E3%83%97%E3%83%AA%E3%83%B3%E3%82%BF%E3%83%BC%E4%BD%BF%E3%81%A3%E3%81%A6%E3%81%A4%E3%81%84%E3%81%AB%E5%AE%8C%E6%88%90-989139bffd16
+- 2026-01-06: 冬休みもコツコツ進めたドローン制作。要約: あけましておめでとうございます！ 早いもので後期の授業も残り数回となりました。 URL: https://medium.com/furuhashilab/冬休みもコツコツ進めたドローン制作-4147d77f2cf3
+- 2026-01-05: 古橋先生のドローン空撮、動画化してみた。【V&F週報】。要約: 古橋先生のドローン空撮、動画化してみた。【V&F週報】に関する短い活動記録。こんにちは。 URL: https://medium.com/furuhashilab/古橋先生のドローン空撮-動画化してみた-v-f週報-9b359458aed9
+- 2025-12-15: Nano Bananaにグラレコ描かせてみた！ドローン2週報。要約: Nano Bananaにグラレコ描かせてみた！ドローン2週報に関する短い活動記録。こんにちわ。 ドローン2です。 URL: https://medium.com/furuhashilab/nano-bananaにグラレコ描かせてみた-ドローン2週報-ba24db54b922
+- 2025-12-15: 【12月ハッカソン】今話題のGoogle GeminiのNano Banana実際の精度はどうなの！？。要約: 【12月ハッカソン】今話題のGoogle GeminiのNano Banana実際の精度はどうなの！？に関する短い活動記録。こんにちは。 ドローン1です！ URL: https://medium.com/furuhashilab/12%E6%9C%88%E3%83%8F%E3%83%83%E3%82%AB%E3%82%BD%E3%83%B3-%E4%BB%8A%E8%A9%B1%E9%A1%8C%E3%81%AEgoogle-gemini%E3%81%AEnano-banana%E5%AE%9F%E9%9A%9B%E3%81%AE%E7%B2%BE%E5%BA%A6%E3%81%AF%E3%81%A9%E3%81%86%E3%81%AA%E3%81%AE-ec7429cedeb6
+- 2025-12-09: 【ドローン部2】 巾着袋案。要約: 【ドローン部2】 巾着袋案に関する短い活動記録。こんにちは。 本吉です。 URL: https://medium.com/furuhashilab/ドローン部2-巾着袋案-a433c314b081
+- 2025-12-08: モデリングって難しい。要約: こんにちはドローン部１の山﨑です 今日はドローン部１がどんな進捗報告が上がるか楽しみ！ ！ URL: https://medium.com/furuhashilab/モデリングって難しい-10949d5a318b
+- 2025-12-01: 【ドローン1 週報 12/02】ちゃくちゃくと自家製ドローンを作成中！。要約: こんにちは、3年の井上です。 2025年もあと一か月…年越しジャンプをしたのが昨日のように感じます。 URL: https://medium.com/furuhashilab/ドローン1-週報-12-02-ちゃくちゃくと自家製ドローンを作成中-ee8f1720c444
+- 2025-11-25: 【ドローン部2】ハッカソン案。要約: 【ドローン部2】ハッカソン案に関する短い活動記録。案1:マグカップ URL: https://medium.com/furuhashilab/ドローン部2-ハッカソン案-0a44369fc146
+- 2025-11-25: 【ドローン1】11月ハッカソン。要約: こんにちは、3年の井上です。 来年のゼミ生がだんだんと動き始め、来年のゼミ活動への期待が高まると同時に、4年生との別れも近づいていることに気づき寂しい気持ちになってきました。 URL: https://medium.com/furuhashilab/ドローン1-11月ハッカソン-5dc07a00b798
+- 2025-11-10: ドローン部 活動日記。要約: ドローン部 活動日記に関する短い活動記録。週報を担当しますテラドです。 URL: https://medium.com/furuhashilab/ドローン部-活動日記-699d674e1e09
+- 2025-11-10: 作成するドローンを決定しました！。要約: 作成するドローンを決定しました！に関する短い活動記録。こんにちは！ ドローン部1の稲田です。 URL: https://medium.com/furuhashilab/作成するドローンを決定しました-c7a965782ca2
+- 2025-11-03: NISTが提唱！ドローン操縦者技能評価メニューへの挑戦【ドローン②週報】。要約: ドローン部２の週報を担当します岡村です。 URL: https://medium.com/furuhashilab/nistが提唱-ドローン操縦者技能評価メニューへの挑戦-ドローン②週報-1dc4f0f590a8
+- 2025-10-28: ついに始動。要約: ついに始動に関する短い活動記録。こんにちは！ ドローン部１の山﨑です URL: https://medium.com/furuhashilab/ついに始動-4185bd7bb2ea
+- 2025-10-20: ドローンレースがしたい！【10/21 ドローン2 週報】。要約: ドローンレースがしたい！【10/21 ドローン2 週報】に関する短い活動記録。こんにちは！ 本吉顕です。 URL: https://medium.com/furuhashilab/ドローンレースがしたい-10-21-ドローン2-週報-66fb323104b1
+- 2025-10-18: ドローン部1の3Dプリンター初挑戦記録。要約: ドローン部1の3Dプリンター初挑戦記録に関する短い活動記録。こんにちは。 ドローン部4年の林です。 URL: https://medium.com/furuhashilab/ドローン部1の3dプリンター初挑戦記録-f3807afdbaa0
+- 2025-10-13: 【10/14ドローン部2週報】ドローンで何してみる？。要約: 【10/14ドローン部2週報】ドローンで何してみる？に関する短い活動記録。こんにちは。 3年の小崎です。 URL: https://medium.com/furuhashilab/10-14ドローン部2週報-ドローンで何してみる-515e17fee47b
+- 2025-10-13: やっと決めました！ドローン部1の後期の目標はこれだ！。要約: やっと決めました！ドローン部1の後期の目標はこれだ！に関する短い活動記録。こんにちは。 ドローン部4年の林です。 URL: https://medium.com/furuhashilab/やっと決めました-ドローン部1の後期の目標はこれだ-5ecea457a24c
+- 2025-10-06: 草刈りドローンの可能性について。要約: 草刈りドローンの可能性についてに関する短い活動記録。ドローン部②の週報を担当する寺土です。 URL: https://medium.com/furuhashilab/草刈りドローンの可能性について-69bf8fd25b80
+- 2025-07-22: アプリでホバリング練習【ドローン週報②7/22】。要約: DRONE STARさんから頂いたドローンで今回も練習しました！ URL: https://medium.com/furuhashilab/アプリでホバリング練習-ドローン週報②7-22-f6f8e9f3257f
+- 2025-07-07: 学びの多かった一週間。要約: こんにちは！ ドローン部②の寺土日南子です。 URL: https://medium.com/furuhashilab/学びの多かった一週間-8166697f25aa
+- 2025-07-01: 🌏 大阪万博×ドローン。要約: こんにちは、ドローン2の佐藤愛妃です！ 先週、大阪万博に行ってきたので、そこで見たドローンショーと万博ドローン情報をまとめました！ URL: https://medium.com/furuhashilab/大阪万博-ドローン-11beaf232b9e
+- 2025-06-29: いよいよ明日！ジオ展カウントダウン最終報告！【2025/7/1 ドローン1 週報】。要約: こんにちは！ ドローン1部4年の林（優）です。 URL: https://medium.com/furuhashilab/いよいよ明日-ジオ展カウントダウン最終報告-2025-7-1-ドローン1-週報-5c734cea3c7f
+- 2025-06-24: 操作練習に最適！5,000円以下のトイドローン比較レポート【6/24ドローン1週報】。要約: 操作練習に最適！5,000円以下のトイドローン比較レポート【6/24ドローン1週報】に関する短い活動記録。こんにちは！ 3年の安生です。 URL: https://medium.com/furuhashilab/%E3%81%82-3d0fc411b4c3
+- 2025-06-22: 【ドローン２週報】ドローンを飛ばすまでに。要約: 【ドローン２週報】ドローンを飛ばすまでに URL: https://medium.com/furuhashilab/%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%EF%BC%92%E9%80%B1%E5%A0%B1-%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%E3%82%92%E9%A3%9B%E3%81%B0%E3%81%99%E3%81%BE%E3%81%A7%E3%81%AB-c7ffb76bee41
+- 2025-06-17: 【6/17ドローン部１週報】横瀬町防災訓練に参加！。要約: 【6/17ドローン部１週報】横瀬町防災訓練に参加！に関する短い活動記録。こんにちは、3年の井上です。 URL: https://medium.com/furuhashilab/6-17ドローン部１週報-横瀬町防災訓練に参加-040cd0eeda39
+- 2025-06-09: Japan Drone 2025に行ってきました！。要約: こんにちは。 ドローン部2の寺土日南子です。 URL: https://medium.com/furuhashilab/japan-drone-2025に行ってきました-778d063ae04b
+- 2025-06-07: Japan Drone 2025に行ってみた！。要約: こんにちは、古橋研究室ドローン部3年山﨑 璃音です！ 今回は2025年6月4日(水)〜6月6(金)に幕張メッセで開催されたJapan Drone2025に行ったので、特に面白かったドローンと感想を書きます！ URL: https://medium.com/furuhashilab/japan-drone-2025に行ってみた-fd15bdfe26f3
+- 2025-06-03: ジオ展に向けて ジオガチャデザインソン【6/3ドローン1週報】。要約: ジオ展に向けて ジオガチャデザインソン【6/3ドローン1週報】に関する短い活動記録。こんにちは！ 3年の安生です。 URL: https://medium.com/furuhashilab/ジオ展に向けて-ジオガチャデザインソン-6-3ドローン1週報-eff4331c88cd
+- 2025-05-27: 【ドローン部2 】 ジオ展に向けたガチャガチャ景品案。要約: 【ドローン部2 】 ジオ展に向けたガチャガチャ景品案に関する短い活動記録。こんにちは！ URL: https://medium.com/furuhashilab/ドローン部2-ジオ点に向けたガチャガチャ景品案-ceb70ca742ea
+- 2025-05-27: ジオ展用景品について！【5/27ドローン1週報】。要約: ジオ展用景品について！【5/27ドローン1週報】に関する短い活動記録。こんにちは、三年の稲田です！ URL: https://medium.com/furuhashilab/ジオ展用景品について-5-27ドローン1週報-3827c693f2d6
+- 2025-05-19: 【5/20ドローン部２週報】ドローンの種類を学ぼう。要約: 【5/20ドローン部２週報】ドローンの種類を学ぼうに関する短い活動記録。こんにちは。 三年の小崎です。 URL: https://medium.com/furuhashilab/5-20%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%E9%83%A8%EF%BC%92%E9%80%B1%E5%A0%B1-%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%E3%81%AE%E7%A8%AE%E9%A1%9E%E3%82%92%E5%AD%A6%E3%81%BC%E3%81%86-cc0e3788223a
+- 2025-05-18: 【5/18 週報】ドローン部、秋の合宿企画が始動中！。要約: 【5/18 週報】ドローン部、秋の合宿企画が始動中！に関する短い活動記録。こんにちは！ ドローン部4年の林です。 URL: https://medium.com/furuhashilab/5-18-週報-ドローン部-秋の合宿企画が始動中-007931dd20c4
+- 2025-04-22: Phantom 4って何？｜基本構造と機能をわかりやすく解説。要約: こんにちは、ドローン部3年の井上です！ これからよろしくお願いします。 URL: https://medium.com/furuhashilab/phantom-4って何-基本構造と機能をわかりやすく解説-2dbce0ee090f
+- 2025-04-15: 【Drone1 週報】ドローン部の魅力的な新メンバー紹介！！。要約: 【Drone1 週報】ドローン部の魅力的な新メンバー紹介！！に関する短い活動記録。こんにちは！ ドローン部4年の林です！ URL: https://medium.com/furuhashilab/drone1-週報-ドローン部の魅力的な新メンバー紹介-72c7a4ddaf04
+- 2024-12-13: 無人航空機の事故、重大インシデントが発生した時の義務。要約: この制度は、無人航空機に関する事故又は重大インシデントが発生した場合、当該無人航空機を飛行させる者が、ただちに飛行を中止し、負傷者を救護すると共に、当該事故又は重大インシデントが発生した日時及び場所などを国土交通大臣に報告しなければならない制度です。 URL: https://medium.com/furuhashilab/無人航空機の事故-重大インシデントが発生した時の義務-e93a2b9c2064
+- 2024-10-21: 日本初！花火搭載のドローン！。要約: 日本初！花火搭載のドローン！に関する短い活動記録。こんにちは。 ドローン部3年の林です。 URL: https://medium.com/furuhashilab/日本初-花火搭載のドローン-ea2180d82a3a
+- 2024-07-08: OpenDroneMapとは？【ドローン部週報 2024/07/08】。要約: こんにちは！ ドローン部の林と佐藤です。 URL: https://medium.com/furuhashilab/opendronemapとは-ドローン部週報-2024-07-08-077d93c74679
+- 2024-06-24: 横瀬町でドローンの防災飛行訓練に参加！ (ドローン部週報 6/25)。要約: こんにちは。 ドローン部3年の林と佐藤です。 URL: https://medium.com/furuhashilab/横瀬町でドローンの防災飛行訓練に参加-ドローン部週報-6-25-dcf610d11b33
+- 2023-05-30: 吉田 ドローンモデリングハッカソン。要約: 吉田 ドローンモデリングハッカソンに関する短い活動記録。こんにちは！ 4年の吉田です。 URL: https://medium.com/furuhashilab/吉田-ドローンモデリングハッカソン-74dc6033c9a7
+- 2022-06-21: 6/18,19横瀬町災害時初動訓練（ドローン訓練会）。要約: こんにちは、ドローン部3年の小澤です🙋‍♂️ URL: https://medium.com/furuhashilab/6-18-19横瀬町災害時初動訓練-ドローン訓練会-764c8b9f2b8e
+- 2022-06-09: ドローン部週報 6/14。要約: ドローン部週報 6/14に関する短い活動記録。こんにちは！ ドローン部吉田です！ URL: https://medium.com/furuhashilab/ドローン部週報-6-14-edca541acd6a
+- 2022-05-31: 【ドローン部】ガチャガチャハッカソン。要約: 【ドローン部】ガチャガチャハッカソンに関する短い活動記録。こんにちは、3年の小澤です🙋‍♂️ URL: https://medium.com/furuhashilab/ドローン部-ガチャガチャハッカソン-c667c31915d9
+- 2022-05-10: 【ドローン部】週報２。要約: 【ドローン部】週報２に関する短い活動記録。こんにちは。 三年の吉田です。 URL: https://medium.com/furuhashilab/ドローン部-週報２-7c29d4cabfc9
+- 2022-04-26: 【ドローン部】2022年度 第一回目ミーティング。要約: 前回のミーティングで、古橋先生を含めたドローン部メンバーでミーティングを行うとのことだったのですが、先生が中々に忙しいらしく連絡がなかった為、取り敢えず現状できることをやってみました！ 先生、ドローン部を見捨てないで下さいね、、😂笑 URL: https://medium.com/furuhashilab/ドローン部-第一回目ミーティング-3fcbb1061f65
+- 2022-01-11: ドローン部、今年の抱負。要約: UNVT Hackathon Drone Teamの成果 URL: https://medium.com/furuhashilab/ドローン部-今年の抱負-8e575309c528
+- 2021-12-04: ドローン週報。要約: ドローン週報に関する短い活動記録。＃STM訓練 URL: https://medium.com/furuhashilab/ドローン週報-7d7847e58da1
+- 2021-11-02: ドローン部：ハッカソンの修正。要約: 今回はゼミ内サークルで取り組んでいるプロジェクトのイラストとLINEスタンプ化可能なコンテンツを作成しました。 URL: https://medium.com/furuhashilab/ドローン部-味のあるイラスト作成-2f05a3de9fda
+- 2021-10-19: 第一回STM訓練開催！。要約: 今週は研究室に到着したSTMのバケツにAからJまでのアルファベットを書き加え、いよいよSTMを使ったドローン操縦訓練を開催しました。 URL: https://medium.com/furuhashilab/第一回stm訓練開催-1df373ee2837
+- 2021-10-11: ドローン部週報。要約: 本日より相模原キャンパスでドローンの飛行練習を行います。 URL: https://medium.com/furuhashilab/ドローン部週報-510c6b8cd9a
+- 2021-09-28: ドローン部夏合宿。要約: ドローン部夏合宿に関する短い活動記録。先週から後期のゼミが始まりました！ URL: https://medium.com/furuhashilab/ドローン部夏合宿-71e626496402
+- 2021-06-15: STMをつくろう!。要約: 今週のドローン部ではSTMツールキットを作成することについて話し合いました。 URL: https://medium.com/furuhashilab/stmをつくろう-6c3abc582875
+- 2021-06-07: ドローン部６月ハッカソン。要約: 今回は、横瀬町ウォーキングコースアワードにドローン部として応募しました。 URL: https://medium.com/furuhashilab/ドローン部６月ハッカソン-298a5766b837
+- 2021-06-01: ドローン週報⑤。要約: ドローン週報⑤に関する短い活動記録。＃DRONE BIRDのロゴが完成 URL: https://medium.com/furuhashilab/ドローン週報⑤-d581e3c8ae6
+- 2021-05-25: ドローン部：ハッカソンを終えて。要約: ドローン部：ハッカソンを終えてに関する短い活動記録。ドローン部の伊藤です。 URL: https://medium.com/furuhashilab/ドローン部-ハッカソンを終えて-d874405f4d7e
+- 2021-05-11: ドローン部週報③。要約: 今週はドローン部リーダーに就任しました神田が担当いたします。 URL: https://medium.com/furuhashilab/ドローン部週報③-843bd57482de
+- 2021-04-26: ドローン部週報②。要約: 今週は、昨年度（2020）行ったドローン部の作業内容の振り返りと今後何をしていくのかを話し合いました。 URL: https://medium.com/furuhashilab/ドローン部週報②-33f0b968cb8a
+- 2021-01-14: 航空場を地理院地図で表示させる！？。要約: 航空場を地理院地図で表示させる！？に関する短い活動記録。ドローン部 ハッカソン12月編 URL: https://medium.com/furuhashilab/航空場を地理院地図で表示させる-92a457e53e38
+- 2020-12-25: アドベントカレンダー 12/25。要約: こんにちは。 気づいたらクリスマスの担当になっていました。 URL: https://medium.com/furuhashilab/アドベントカレンダー-12-25-9fcdb652690b
+- 2020-12-24: 12月24日アドベントカレンダー「ドローンイベント広報上の最重要視点の選定」。要約: イブの日のアドベントカレンダーを担当します佐野です。 URL: https://medium.com/furuhashilab/12月24日アドベントカレンダー-ドローンイベント広報上の最重要視点の選定-8044d439c747
+- 2020-12-22: 【コンバーターファイターⅡ】MacOSでPotreeConverterの使用はできるのか？。要約: アドベントカレンダー12月22日 森田浩徳 URL: https://medium.com/furuhashilab/コンバーターファイターⅱ-macosでpotreeconverterの使用はできるのか-16e2891a83ed
+- 2020-12-20: ドローン部週報㉒。要約: ドローン部週報㉒に関する短い活動記録。こんにちは、古橋ゼミ4年の森です。 URL: https://medium.com/furuhashilab/ドローン部週報㉒-97f3794d1eaf
+- 2020-12-16: 伊豆大島ドローン調査を決行。要約: アドベントカレンダー12/18担当 2020年度 ゼミ論進捗状況報告 1A117117 中西 駿太 URL: https://medium.com/furuhashilab/伊豆大島ドローン調査を決行-ff28c4c16937
+- 2020-12-14: アドベントカレンダー12月14日。要約: アドベントカレンダー12月14日に関する短い活動記録。本間友那 URL: https://medium.com/furuhashilab/アドベントカレンダー12月14日-1e2ed0b0fec8
+- 2020-12-07: ドローン部 週報⑳。要約: 12/30 ドローン部 ミーティング内容 URL: https://medium.com/furuhashilab/ドローン部-週報⑳-f7d3dcd57ac3
+- 2020-12-02: 少年 君の空撮データは何色だ！。要約: 〜 ドローンバード流・空撮データの命名規則 v2.0 (改訂版) 〜 URL: https://medium.com/furuhashilab/少年-君の空撮データは何色だ-5a29fb759ca9
+- 2020-11-29: ドローン部週報 19。要約: ドローン部週報 19に関する短い活動記録。ミーティング URL: https://medium.com/furuhashilab/ドローン部週報-19-b683dd26367c
+- 2020-11-16: ドローン週報⑱。要約: ドローン週報⑱に関する短い活動記録。＃ドローン部合宿を終えて URL: https://medium.com/furuhashilab/ドローン週報⑱-d09bbfb4ffe8
+- 2020-11-09: ポイントクラウドデータを用いた三人称視点ドローンの検討。要約: ポイントクラウドデータを用いた三人称視点ドローンの検討に関する短い活動記録。ゼミ論中間発表 森田浩徳 URL: https://medium.com/furuhashilab/ポイントクラウドデータを用いた三人称視点ドローンの検討-1b9a0ceff67a
+- 2020-11-09: Pix4Dを用いたオルソモザイクの形成のマニュアル作成。要約: 今回、私のゼミ論は、「Pix4Dを用いたオルソモザイクデータの生成、OAMにアップロードするまでの動画マニュアル作成」をすることに決めました。 URL: https://medium.com/furuhashilab/pix4dを用いたオルソモザイクの形成のマニュアル作成-e0fb55a7a334
+- 2020-11-07: ゼミ論中間発表～伊豆大島放置林調査～。要約: 地球社会共生学部 4年 1A117117 中西駿太 URL: https://medium.com/furuhashilab/ゼミ論中間発表-伊豆大島放置林調査-749fabee5263
+- 2020-10-21: DRONEBIRDは災害時に何を行うのか！？。要約: DRONEBIRDは災害時に何を行うのか！？に関する短い活動記録。ドローン部週報⑰ 森田浩徳 URL: https://medium.com/furuhashilab/dronebirdは災害時に何を行うのか-f0e4a153bcb3
+- 2020-10-19: ドローン部週報16。要約: ドローン部週報16に関する短い活動記録。こんにちは。 ドローン部の佐野です。 URL: https://medium.com/furuhashilab/ドローン部週報16-3ad0727c0980
+- 2020-10-05: ガチャムクがOAM解説員だった話。要約: 今回のハッカソンでは、我々ドローン部はまず前回のハッカソンで終わらせることができなかった残りの作業をまた新たに進めるところからスタートしました。 URL: https://medium.com/furuhashilab/ドローン部-ガチャムクハッカソン-87d7c602c854
+- 2020-09-28: ドローン部週報15。要約: 先週のミーティングでは今後の活動について話し合いました。 URL: https://medium.com/furuhashilab/ドローン部週報15-720d94766057
+- 2020-09-21: 再始動！。要約: 再始動！に関する短い活動記録。ドローン部週報⑭ 森田浩徳 URL: https://medium.com/furuhashilab/再始動-e9d7bdb83081
+- 2020-08-23: ドローン部〜夏合宿〜。要約: ドローン部〜夏合宿〜に関する短い活動記録。ドローン部4年の佐野です。 URL: https://medium.com/furuhashilab/ドローン部-夏合宿-ded7992ca531
+- 2020-07-28: OpenAerialMapの活用(草津市編）。要約: OpenAerialMapの活用(草津市編）に関する短い活動記録。ハッカソン7月編 URL: https://medium.com/furuhashilab/openaerialmapの活用-草津市編-a42476a6f891
+- 2020-07-26: ドローン週報⑬。要約: ドローン週報⑬に関する短い活動記録。こんにちは、松山蘭です。 URL: https://medium.com/furuhashilab/ドローン週報⑬-cec744111913
+- 2020-07-19: ドローン部週報⑫。要約: ドローン部週報⑫に関する短い活動記録。こんにちは！ 4年のこやももはです！ URL: https://medium.com/furuhashilab/ドローン部週報⑪-f6c5ad8e18d
+- 2020-07-11: ドローン部週報 第１１週目。要約: こんにちは、古橋研究室４年の中西駿太です。 オンラインハッカソンも無事終了し、さあーいよいよドローンを飛ばすぞ！ URL: https://medium.com/furuhashilab/ドローン部週報-第１１週目-72a23c8a14
+- 2020-06-30: ドローンにまつわる法律。要約: 第3回ハッカソン ドローン部 チートシート URL: https://medium.com/furuhashilab/ドローンにまつわる法律-bdd855e0a9c7
+- 2020-06-30: ドローン部週報 第10週目。要約: こんにちは、古橋研究室４年の吉田です。 ドローン部週報も第10週目になるみたいですね。 URL: https://medium.com/furuhashilab/ドローン部週報-第10週目-27214bce3116
+- 2020-06-30: ドローン部 図鑑組 ハッカソン。要約: こんにちは。 ドローン部4年の佐野です。 URL: https://medium.com/furuhashilab/ドローン部-図鑑組-ハッカソン-de0e9f340683
+- 2020-06-23: ドローン部週報⑨。要約: こんにちは。 古橋研究室ドローン部の佐野です。 URL: https://medium.com/furuhashilab/ドローン部週報⑨-a3cd8972224f
+- 2020-06-15: 荒野行動から学ぶドローンの安全飛行。要約: 都心には様々な高層ビルがありますよね。 その中でも際立っているビル URL: https://medium.com/furuhashilab/荒野行動から学ぶドローンの安全飛行-d649e3d00bfa
+- 2020-05-24: ドローン部週報⑥。要約: こんにちは。 古橋ゼミ4年の森玲子です。 URL: https://medium.com/furuhashilab/ドローン部週報-71fd93bcfcc1
+- 2020-05-16: ドローン部週報⑤。要約: ドローン部週報⑤に関する短い活動記録。今回のミーティングでは URL: https://medium.com/furuhashilab/ドローン部週報⑤-ecd14610c32d
+- 2020-05-12: 里山ガーデンPV、DRONEBIRD賞への道。要約: 2020年度に入り、大手ドローン製造会社DJIから2つの新製品が発売されました。 一般人向けにMavic Air 2、産業用にはMATRICE 300 RTKとドローン界隈では少し盛り上がりを見せつつあります。 URL: https://medium.com/furuhashilab/里山ガーデンpv-dronebird賞への道-1e6f2e1e2440
+- 2020-05-12: ふるはし研究室の災害教室。要約: こんにちは、古橋ゼミの安保です！ 今回オンラインハッカソンの第2回目ということで、我々のグループでは「ガチャピン＆ムックを使ったドローンワークショップの提案」を行いました。 URL: https://medium.com/furuhashilab/ふるはし研究室の災害教室-5f6bbb204ab0
+- 2020-05-06: ドローン部週報④。要約: ドローン部週報④に関する短い活動記録。こんにちは。 今回担当します松山です。 URL: https://medium.com/furuhashilab/ドローン部週報④-b5af4f63e27b
+- 2020-04-29: ドローン部週報➂。要約: ドローン部週報➂に関する短い活動記録。こんにちは！ 4年の古屋百々葉です！ URL: https://medium.com/furuhashilab/ドローン部週報➂-19f2f4298245
+- 2020-04-25: ようこそドローン部へ！～オンラインで知識を深めよう。～。要約: ■中西 駿太 地球社会共生学部 4年 A組 129番 1A117117 URL: https://medium.com/furuhashilab/ようこそドローン部へ-オンラインで知識を深めよう-77a05d1fce3b
+- 2019-12-16: ドローン部週報 ７週目。要約: 今週はドローン部リーダーに就任してから、ポップアップ広告がDJIだらけになってしまった3年の森田が担当いたします。 今回は最近話題になりつつある、「ドローン技能評価方法 ”STM for SUAS”」について書いていこうと思います。 URL: https://medium.com/furuhashilab/ドローン部週報-７週目-917d1b32d7be
+- 2019-12-02: オープンなコミュニティだからこそ行動規範 Code of Conduct を大事にする。。要約: 災害ドローン救援隊DRONEBIRDは誰でも参加できる。 URL: https://medium.com/furuhashilab/オープンなコミュニティだからこそ行動規範-code-of-conduct-を大事にする-9eb6ddef7b58
+- 2019-11-22: ドローン部 週報 第４週目。要約: 今回の週報では、ドローンを操る者として最低限知っていないといけない「航空法」について紹介しようと思います。 もう既に知っていないとおかしいレベルの話かもしれませんが、確認の意味も込めて取り上げたいと思います。 URL: https://medium.com/furuhashilab/ドローン部-週報-第４週目-1e78a2b2e04f
+- 2019-10-14: ドローン部週報：ドローン部始動開始！。要約: ドローン部週報：ドローン部始動開始！に関する短い活動記録。こんにちは！ 3年のこやももはです！ URL: https://medium.com/furuhashilab/こんにちは-3年のこやももはです-45b6a074086b
+- 2018-12-27: 地物追加機能実装。要約: 今回のブログは卒業制作のPWA(OSM編集ツールの予定)で、LeafletのPlugins機能の中でLeaflet.PM(地物追加機能)を実装したお話。 URL: https://medium.com/furuhashilab/地物追加機能実装-c69f24f2b7cf
+- 2018-12-14: 現在位置表現実装。要約: 今回のブログは卒業制作のPWA(OSM編集ツールの予定)で、LeafletのPlugins機能の中でLeaflet.Locate(現在位置表示)を実装したお話。 URL: https://medium.com/furuhashilab/現在位置表現実装-a9084e9e4756
+- 2018-12-11: モード1とモード2の仁義なき戦い。要約: ドローン関係者が集まっている場で、時によっては、険悪な雰囲気になりかねない質問がある。 URL: https://medium.com/furuhashilab/モード1とモード2の仁義なき戦い-92aa99ead2de
+- 2018-12-08: 人口集中地区(DID)を知る方法。要約: ドローンのことをよく知っている人かどうか確認する便利なキーワードがある。 URL: https://medium.com/furuhashilab/人口集中地区-did-を知る方法-addf252045d2
+- 2018-11-18: ドローンの初心者講座。要約: ドローンを飛ばすのって難しいの？ そもそも誰でもドローンって飛ばしていいの？ URL: https://medium.com/furuhashilab/ドローンの初心者講習-8b4854b83749
+- 2018-10-17: 初めてのドローンワークショップ inイオンモール武蔵村山。要約: 今回はイオンモール武蔵村山でドローンのワークショップを行いました。 集合時間には間に合ったのですが少々道に迷ってしまって予定より到着が遅れてしまいました。 URL: https://medium.com/furuhashilab/初めてのドローンワークショップ-inイオンモール武蔵村山-fec618c959f0
+- 2018-10-16: イオンモール巡業ドローンワークショップ〜ドローンが動かなくなる恐怖〜。要約: イオンモール巡業ドローンワークショップ〜ドローンが動かなくなる恐怖〜に関する短い活動記録。こんにちは！ 3年の末光香織です。 URL: https://medium.com/furuhashilab/イオンモール巡業ドローンワークショップ-ドローンが動かなくなる恐怖-d9f4844c445d
+- 2018-10-12: No more ドローン事故。要約: こんにちは！ 青山学院大学地球社会共生学部３年古橋ゼミの増田将馬です！ URL: https://medium.com/furuhashilab/no-more-ドローン事故-72b71acedb90
+- 2018-10-03: イオンモール巡業ドローンワークショップマニュアル～設営編～。要約: こんにちは。 古橋ゼミ3年の中西敦子です。 URL: https://medium.com/furuhashilab/イオンモール巡業ドローンワークショップマニュアル-設営編-fdb01d4bbbd6
+- 2018-07-16: ゼミ合宿＠伊豆大島。要約: ゼミ合宿＠伊豆大島に関する短い活動記録。私が編集した動画っす！ URL: https://medium.com/furuhashilab/ゼミ合宿-伊豆大島-88ed09b33fa7
+- 2018-06-24: 武甲山って知ってる？。要約: 2018年6月24日、Ayameが撮影。 ©️ CC BY 4.0 URL: https://medium.com/furuhashilab/武甲山って知ってる-96f16e6d815d
+- 2018-05-29: OpenAerialMapのススメ。要約: ドローンによる空撮画像を世界中の人々と共有する。 そこから世界が変わっていく。 URL: https://medium.com/furuhashilab/openaerialmapのススメ-528bee8d910
+
+## 4. 主要トピック
+
+- qgis_gis_toolsに関する記事群。
+- droneに関する記事群。
+- ドローン部に関する記事群。
+- Yukari Hayashiに関する記事群。
+- Hironori Moritaに関する記事群。
+- taichifuruhashiに関する記事群。
+- ドローン部週報に関する記事群。
+- Naoki Itoに関する記事群。
+- Ran Matsuyamaに関する記事群。
+- Shunta Nakanishiに関する記事群。
+- 佐野公紀に関する記事群。
+- 週報に関する記事群。
+
+## 5. 重要な固有名詞
+
+- drone
+- qgis_gis_tools
+- ドローン部
+- ドローン
+- 活動記録
+- ドローン部週報
+- Yukari Hayashi
+- Hironori Morita
+- Naoki Ito
+- Ran Matsuyama
+- Shunta Nakanishi
+- 佐野公紀
+- AkiraMotoyoshi
+- Ayame.O
+- Taichi Furuhashi
+- taichifuruhashi
+- ドローン週報
+- ハッカソン
+- Hinako Terado
+- Ho
+- INOUE RENSEI
+- YAMASAKI RITO
+- Yosuke Kanda
+- 森田浩徳
+- STM
+- アドベントカレンダー
+- 森玲子
+- Drone
+- Fuka Okamura
+- Taiyu Ozawa
+- ミーティング
+- 古屋 百々葉
+- 吉田航
+- 週報
+- Japan
+- Nano
+- Banana
+- DRONEBIRD
+- furuhashilab
+- INADA YUKA
+- KOZAKI MIA
+- Moe Anjo
+- report
+- ジオ展
+- 古橋ゼミ
+- 地球社会共生学部
+- 月ハッカソン
+- 2020-06-30
+- A117117
+- DRONE
+
+## 6. 研究室活動としての意味
+
+- QGIS、GIS、ドローン、ODM、3Dモデル、地理空間ツールの実践・検証活動
+
+## 7. NotebookLMが回答時に参照すべき観点
+
+- 回答では、必ず該当記事の元記事URL、公開日、著者を確認する。
+- 日付、イベント名、プロジェクト名、人名は記事内の表記を優先し、不明なものは「不明」とする。
+- 記事間の比較では、分類ラベル、タグ、公開年、著者、関連キーワードを手がかりにする。
+- このテーマで頻出する検索語: drone、qgis_gis_tools、ドローン部、Yukari Hayashi、Hironori Morita、taichifuruhashi、ドローン部週報、Naoki Ito、Ran Matsuyama、Shunta Nakanishi、佐野公紀、週報、AkiraMotoyoshi、Ayame.O、Taichi Furuhashi、furuhashilab、Hinako Terado、Ho、INOUE RENSEI、report、YAMASAKI RITO、Yosuke Kanda、森田浩徳、2020-06-30、Drone、Fuka Okamura、Taiyu Ozawa、ドローン1、ドローン部2、古屋 百々葉
