@@ -8,7 +8,8 @@
     "import:sheet-summary": "node scripts/import-medium-sheet-summary.mjs",
     "build:index": "node scripts/build-article-index.mjs",
     "export:markdown": "node scripts/export-articles-markdown.mjs",
-    "build:distilled": "node scripts/build-distilled-docs.mjs"
+    "build:distilled": "node scripts/build-distilled-docs.mjs",
+    "build:distilled:v2": "node scripts/build-distilled-v2.mjs"
   },
   "engines": {
     "node": ">=18"

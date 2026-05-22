@@ -1,6 +1,10 @@
 .DS_Store
 node_modules/
-logs/
+raw/fulltext/
+logs/*
+!logs/fetch_failed_articles.csv
+!logs/build_distilled_v2_report.md
+!logs/distilled_v2_validation_report.md
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
